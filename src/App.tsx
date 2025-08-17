@@ -10,11 +10,11 @@ import LeftWing2 from "./Components/LeftWing1.1";
 import LeftWing3 from "./Components/LeftWing1.2";
 import LeftWing4 from "./Components/LeftWing1.3";
 import LeftWing5 from "./Components/LeftWing1.4";
-import PlaneBody from "./Components/planeBody";
 import RightWingTail1 from "./Components/RightWingTail1";
 import RightWingTail2 from "./Components/RightWingTail2";
 import LeftWingTail2 from "./Components/LeftWingTail2";
 import LeftWingTail1 from "./Components/LeftWingTail1";
+import PlaneBody from "./Components/PlaneBody";
 // Adjust the path according to your image location
 const App = () => {
   const [colors, setColors] = useState({
