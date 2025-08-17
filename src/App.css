@@ -1,0 +1,155 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container {
+  min-height: 95vh;
+  background: linear-gradient(135deg, #a0d8f1 0%, #87cfff 50%, #6ba6d6 100%);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.mainLayout {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.shapesContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  flex: 2;
+  min-width: 300px;
+  height: 90vh;
+}
+
+.shapesArea {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  background: linear-gradient(180deg, #87ceeb 0%, #e0f7ff 100%);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.paletteContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  height: 300px;
+}
+
+.paletteTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.resetButton {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dragIndicator {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-wing {
+  position: relative;
+  right: -40px;
+  top: -124px;
+  rotate: 1deg;
+}
+
+.right-tail {
+  position: relative;
+  right: 0px;
+  top: 140px;
+  rotate: 1deg;
+}
+
+.left-tail {
+  position: relative;
+  left: 0px;
+  top: 140px;
+  rotate: 1deg;
+}
+
+.left-wing {
+  position: relative;
+  left: 31px;
+  top: -109px;
+  rotate: 1deg;
+}
+
+.dragging {
+  transform: scale(1.2);
+  transition: transform 0.1s ease-in-out;
+}
+
+.planeBody {
+  width: 15px;
+  height: 400px;
+  background: transparent;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-radius: 15px 15px 0 0;
+}
+
+.planeBodyFront {
+  width: 15px;
+  height: 3px;
+  margin-top: 12px;
+  background: #000;
+}
+
+.planeCabin {
+  width: 15px;
+  height: 69px;
+  margin-top: 80px;
+  border-radius: 100%;
+  background: transparent;
+  outline: 2px solid rgb(7, 7, 7);
+}
+
+.planeTail {
+  width: 15px;
+  height: 69px;
+  margin-top: 197px;
+  border-radius: 100%;
+  background: transparent;
+  outline: 2px solid rgb(7, 7, 7);
+}
