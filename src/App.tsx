@@ -61,18 +61,6 @@ const App = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleDragOver = (e: any) => {
     e.preventDefault();
-
-    // const element = e.target;
-
-    // console.log(e.target, "dragOverElement");
-
-    // if (element.tagName.toLowerCase() === "path") {
-    //   element.classList.remove("dragging");
-    //   element.addEventListener("dragover", () => {
-    //     element.classList.add("dragging"); // Toggling twice to make sure the class is added or removed
-    //   });
-    //   console.log(element, "draggingElement");
-    // }
   };
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -135,7 +123,7 @@ const App = () => {
                 onDragOver={handleDragOver}
                 styles={{
                   position: "absolute",
-                  left: "-14px",
+                  left: "-15px",
                   top: "91px",
                   rotate: "-1deg",
                   width: "220px",
